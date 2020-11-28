@@ -1,8 +1,8 @@
 FROM alpine:3.12.1
 
 # Setup for CFN-NAG
-RUN apk add --update npm ruby git wget ruby-rdoc
-RUN apk add ruby-webrick
+RUN apk add --update --no-cache npm ruby git wget ruby-rdoc
+RUN apk add --no-cache ruby-webrick
 RUN gem install cfn-nag
 RUN npm install -g cfn-lint
 
