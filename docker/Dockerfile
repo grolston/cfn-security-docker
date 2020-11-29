@@ -1,7 +1,9 @@
 FROM alpine:3.12.1
 
+LABEL maintainer="George Rolston <https://github.com/grolston>"
+
 # Setup for CFN-NAG
-RUN apk add --update --no-cache npm ruby git wget ruby-rdoc
+RUN apk add --update --no-cache npm ruby git ruby-rdoc
 RUN apk add --no-cache ruby-webrick
 RUN gem install cfn-nag
 RUN npm install -g cfn-lint
