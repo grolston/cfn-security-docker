@@ -2,7 +2,7 @@
 
 Continuous Security tool suite for CloudFormation templates using GitHub Actions.
 
-`cfn-security` docker image is docker image containing static code analysis tools for security AWS CloudFormation templates. The docker image is designed to run without requiring any AWS credentials making it easy to add to your GitHub Actions or Gitlab-CI.
+`cfn-security` docker image is docker image containing static code analysis tools for security AWS CloudFormation templates. The docker image is **designed to run without requiring any AWS credentials** making it easy to add to your GitHub Actions or Gitlab-CI.
 
 ## Security Tools
 
