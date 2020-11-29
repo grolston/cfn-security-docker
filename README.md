@@ -31,4 +31,3 @@ Utilization:
 CFT_DIR="./cloudformation/"
 checkov -d /user/path/to/iac/code $CFT_DIR
 ```
-
