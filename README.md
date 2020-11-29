@@ -29,5 +29,5 @@ Utilization:
 ```sh
 ## scan an entire directory
 CFT_DIR="./cloudformation/"
-checkov -d /user/path/to/iac/code $CFT_DIR
+checkov -d $CFT_DIR
 ```
