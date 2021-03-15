@@ -16,8 +16,8 @@ Utilization:
 
 ```sh
 ## scan an entire directory
-CFT_DIR="./cloudformation/"
-cfn_nag_scan --input-path $CFT_DIR
+CLOUDFORMATION_DIRECTORY="./cloudformation/"
+cfn_nag_scan --input-path $CLOUDFORMATION_DIRECTORY
 ```
 
 ### checkov.io
@@ -28,6 +28,6 @@ Utilization:
 
 ```sh
 ## scan an entire directory
-CFT_DIR="./cloudformation/"
-checkov -d $CFT_DIR
+CLOUDFORMATION_DIRECTORY="./cloudformation/"
+checkov -d $CLOUDFORMATION_DIRECTORY
 ```
