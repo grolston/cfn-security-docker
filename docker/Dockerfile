@@ -16,6 +16,6 @@ RUN pip3 install --no-cache --upgrade pip setuptools
 RUN pip install checkov
 
 # Setup for CFN-GUARD
-RUN apk add --no-cache cargo
+RUN apk add --no-cache cargo tree
 RUN cargo install cfn-guard
 ENV PATH "/root/.cargo/bin:${PATH}"
