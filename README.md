@@ -31,3 +31,15 @@ Utilization:
 CLOUDFORMATION_DIRECTORY="./cloudformation/"
 checkov -d $CLOUDFORMATION_DIRECTORY
 ```
+
+### cfn-guard
+
+[cfn-guard](https://github.com/aws-cloudformation/cloudformation-guard/tree/master/cfn-guard) is a command line tool for validating AWS CloudFormation resources against policy.
+
+Utilization:
+
+```sh
+## scan an entire directory
+CLOUDFORMATION_DIRECTORY="./cloudformation/"
+tree -fai $CLOUDFORMATION_DIRECTORY | grep -e ".yml$" -e ".yaml$" -e ".json$" | cfn-guard check
+```
