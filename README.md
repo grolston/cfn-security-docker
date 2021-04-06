@@ -2,11 +2,27 @@
 
 Continuous Security tool suite for CloudFormation templates using GitHub Actions.
 
-`cfn-security` docker image is docker image containing static code analysis tools for security AWS CloudFormation templates. The docker image is **designed to run without requiring any AWS credentials** making it easy to add to your GitHub Actions or Gitlab-CI.
+`cfn-security` docker image is docker image containing static code analysis tools for security AWS CloudFormation templates. The docker image is **designed to run without requiring any AWS credentials** making it easy to add to your GitHub Actions or Gitlab-CI. To use this tool in GitHub Actions please see [cfn-security](https://github.com/marketplace/actions/cfn-security)
 
 ## Security Tools
 
 The following summarizes the CloudFormation security analysis tools leveraged in cfn-security.
+
+1. cfn-lint
+2. cfn-nag
+3. checkov
+
+### cfn-lint (cfn-python-lint)
+
+[cfn-lint](https://github.com/aws-cloudformation/cfn-python-lint) by AWS. Validate AWS CloudFormation yaml/json templates against the AWS CloudFormation Resource Specification and additional checks. Includes checking valid values for resource properties and best practices.
+
+Utilization:
+
+```sh
+## scan an entire directory
+CLOUDFORMATION_DIRECTORY="./cloudformation/"
+cfn-lint $CLOUDFORMATION_DIRECTORY
+```
 
 ### cfn-nag
 
