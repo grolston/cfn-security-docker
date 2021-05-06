@@ -1,4 +1,4 @@
-# cfn-security
+# cfn-security - Version 1.0
 
 Continuous Security tool suite for CloudFormation templates using GitHub Actions.
 
