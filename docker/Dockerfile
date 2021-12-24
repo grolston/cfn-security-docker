@@ -12,7 +12,7 @@ ENV PYTHONUNBUFFERED=1
 RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 RUN python3 -m ensurepip
 RUN apk add gcc
-RUN pip3 install --no-cache --upgrade pip setuptools
+RUN pip3 install --upgrade pip && pip3 install --upgrade setuptools
 RUN pip3 install --no-cache-dir -U checkov
 
 # cfn-lint
