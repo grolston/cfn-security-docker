@@ -13,9 +13,7 @@ RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 RUN python3 -m ensurepip
 RUN apk add gcc
 RUN pip3 install --no-cache --upgrade pip setuptools
-RUN apk add --no-cache --virtual .build_deps build-base libffi-dev \
- && pip install --no-cache-dir -U checkov \
- && apk del .build_deps
+RUN pip install --no-cache-dir -U checkov \
 
 # cfn-lint
 RUN pip3 install cfn-lint
