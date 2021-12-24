@@ -1,6 +1,8 @@
 # cfn-security
 
-Continuous Security tool suite for CloudFormation templates using GitHub Actions.
+> **Image Update:** Due to docker.com imposing rate limits on for free docker accounts, we have moved our container repository to AWS ECR. You can pull the image by running `docker pull public.ecr.aws/rolston/cfn-security`
+
+Continuous Security tool suite for CloudFormation templates within your CI Pipeline.
 
 `cfn-security` docker image is docker image containing static code analysis tools for security AWS CloudFormation templates. The docker image is **designed to run without requiring any AWS credentials** making it easy to add to your GitHub Actions or Gitlab-CI. To use this tool in GitHub Actions please see [cfn-security](https://github.com/marketplace/actions/cfn-security)
 
