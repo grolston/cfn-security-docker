@@ -1,4 +1,4 @@
-FROM alpine:3.12.4
+FROM alpine:3.15.0
 
 LABEL maintainer="George Rolston <https://github.com/grolston>"
 
