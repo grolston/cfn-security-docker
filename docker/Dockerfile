@@ -17,3 +17,8 @@ RUN apk add --no-cache --virtual .build_deps build-base libffi-dev \
 
 # cfn-lint
 RUN pip3 install cfn-lint
+
+# Setup for CFN-GUARD
+RUN apk add --no-cache cargo tree
+RUN cargo install cfn-guard
+ENV PATH "/root/.cargo/bin:${PATH}"
